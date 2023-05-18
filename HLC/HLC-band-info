@@ -1,0 +1,6 @@
+"Generating disk models" runs with MCFOST to generate the disk models for different dust compositions according to Su(2017)
+"Generating orthogonal polarization components" produces orthogonal polaization components from the output RT.fits files from MCFOST for different dust composition
+"Convolution with HLC PRF" performs the convolution of orthogonal polarization components with "HLC PRF"
+"Generating raw EMCCD frames" runs the emccd_detect routine to generate raw EMCCD images
+"Adding OS9 noise and disk processing" requires OS9 MUFs from the Os9 repository
+"Estimating output polarization fraction" estimates the polarization fraction from the processed disk images
