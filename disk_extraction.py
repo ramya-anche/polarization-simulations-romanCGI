@@ -123,32 +123,9 @@ def processcube(data,ID,diskfile=None,mode=None):
                 choice = np.random.randint(low=0,high=len(disk)+1)
                 data[mind+dlen,:,:] += scalar*box[:,:,choice]
 
-        # Case for +11
-        # Case for +11
-        #if ID in [3,5,8,10,15,17]:
+        
             
-            #rotdisk = rotate(scalar*box,+11,reshape=False)
-            #rotdisk[rotdisk == np.NaN] = 1e-12
-            #rotdisk[rotdisk <= 0] = 1e-12
-            
-            #for dlen in range(mand-mind):
-                #choice = np.random.randint(low=0,high=len(disk)+1)
-                #data[mind+dlen,:,:]=0.03*data[mind+dlen,:,:]
-                #data[mind+dlen,:,:] += rotdisk[:,:,choice]
-
-        # Case for -11
-        #elif ID in [2,4,9,11,14,16]:
-            
-            #rotdisk = rotate(scalar*box,-11,reshape=False)
-            #rotdisk[rotdisk == np.NaN] = 1e-12
-            #rotdisk[rotdisk <= 0] = 1e-12
-            
-            #for dlen in range(mand-mind):
-                #choice = np.random.randint(low=0,high=len(disk)+1)
-                #data[mind+dlen,:,:]=0.03*data[mind+dlen,:,:]
-                #data[mind+dlen,:,:] += rotdisk[:,:,choice]
-
-    if ID in [2,3,4,5,8,9,10,11,14,15,16,17]:
+          if ID in [2,3,4,5,8,9,10,11,14,15,16,17]:
 
         
             if mode == 'Analog':
